@@ -26,10 +26,10 @@ This repository explores a binary classification problem using structured clinic
 
 ```text
 .
-├── Previsão_de_diabetes_pRq.ipynb  # original analysis and modeling
-├── diabetes.csv                     # dataset used by the notebook
-├── requirements.txt                 # reproducibility dependencies
-└── .github/workflows/quality.yml    # lightweight data/notebook checks
+├── diabetes_risk_classification.ipynb  # analysis and modeling
+├── diabetes.csv                         # dataset used by the notebook
+├── requirements.txt                     # reproducibility dependencies
+└── .github/workflows/quality.yml         # lightweight data/notebook checks
 ```
 
 ## Reproduce locally
@@ -38,7 +38,7 @@ This repository explores a binary classification problem using structured clinic
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-jupyter notebook Previsão_de_diabetes_pRq.ipynb
+jupyter notebook diabetes_risk_classification.ipynb
 ```
 
 ## What this project demonstrates
