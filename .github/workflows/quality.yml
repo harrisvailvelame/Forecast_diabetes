@@ -13,7 +13,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Validate notebook JSON
-        run: python -m json.tool 'Previsão_de_diabetes_pRq.ipynb' > /dev/null
+        run: python -m json.tool diabetes_risk_classification.ipynb > /dev/null
       - name: Validate dataset contract
         run: |
           python - <<'PY'
