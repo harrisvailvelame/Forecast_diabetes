@@ -1,24 +1,58 @@
-# Previsão de Diabetes 💉🤖
+# Diabetes Risk Classification — Historical ML Project
 
-![Imagem do Diabetes](https://agenciadenoticias.ms.gov.br/wp-content/uploads/2023/06/diabetes-1-768x425-1-730x480.jpg)
+> Historical machine-learning project from my earlier Data Science work. It is preserved as part of my progression toward Data Engineering and production data systems.
 
-Este repositório contém um modelo preditivo de diabetes desenvolvido em Python usando machine learning. Utiliza dados clínicos como entrada e gera uma previsão de probabilidade de um paciente ter diabetes. Além do modelo, o repositório também inclui um conjunto de dados de treinamento e teste, bem como um script de pré-processamento de dados.
+## Overview
 
-## Por : Pedro H. Velame
+This repository explores a binary classification problem using structured clinical variables from the included `diabetes.csv` dataset. The original notebook covers data exploration, preprocessing and predictive modeling.
 
-### Dicionário de Dados
-- **Pregnancies:** Número de gestações
-- **Glucose:** Nível de glicose no sangue
-- **BloodPressure:** Medição da pressão arterial
-- **SkinThickness:** Espessura da pele
-- **Insulin:** Nível de insulina no sangue
-- **BMI:** Índice de massa corporal
-- **DiabetesPedigreeFunction:** Porcentagem de Diabetes
-- **Age:** Idade
-- **Outcome:** Resultado final (1 é Sim e 0 é Não)
+**Important:** this is an educational data-science project. It is **not** a medical device, diagnostic system or substitute for clinical judgment.
 
-### Sobre o Conjunto de Dados
+## Data fields
 
-Este conjunto de dados é originalmente do National Institute of Diabetes and Digestive and Kidney Diseases. O objetivo é prever de forma diagnóstica se um paciente tem diabetes, com base em certas medições de diagnóstico incluídas no conjunto de dados. Todas as pacientes aqui são mulheres com pelo menos 21 anos de herança indígena Pima.
+| Feature | Meaning |
+|---|---|
+| `Pregnancies` | Number of pregnancies |
+| `Glucose` | Glucose measurement |
+| `BloodPressure` | Blood-pressure measurement |
+| `SkinThickness` | Skin-fold thickness |
+| `Insulin` | Insulin measurement |
+| `BMI` | Body Mass Index |
+| `DiabetesPedigreeFunction` | Family-history-related score |
+| `Age` | Age |
+| `Outcome` | Binary target (`0` / `1`) |
 
-Contribuições e feedback são bem-vindos! 😊🚀
+## Repository structure
+
+```text
+.
+├── Previsão_de_diabetes_pRq.ipynb  # original analysis and modeling
+├── diabetes.csv                     # dataset used by the notebook
+├── requirements.txt                 # reproducibility dependencies
+└── .github/workflows/quality.yml    # lightweight data/notebook checks
+```
+
+## Reproduce locally
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+jupyter notebook Previsão_de_diabetes_pRq.ipynb
+```
+
+## What this project demonstrates
+
+- exploratory analysis of tabular data;
+- binary classification workflow;
+- feature preparation and model evaluation;
+- use of Python, Pandas and scikit-learn in a notebook workflow.
+
+## Portfolio context
+
+My current work is centered on **Data Engineering, lakehouse architecture, distributed processing, data quality and cloud data platforms**. See [`harrisvailvelame/pedrohvel`](https://github.com/harrisvailvelame/pedrohvel) for the current engineering portfolio.
+
+---
+
+**Author:** Harrison Grant Vail  
+[LinkedIn](https://www.linkedin.com/in/harrison-grant-vail) · [GitHub](https://github.com/harrisvailvelame)
